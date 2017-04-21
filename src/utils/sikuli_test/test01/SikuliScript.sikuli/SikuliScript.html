@@ -1,0 +1,91 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>SikuliScript.sikuli</h2> <a href="SikuliScript.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="skw">click</span>(<img src="1492762960765.png" />)
+<span class="kw">if</span> exists(<img src="1492765644092.png" />):
+    <span class="skw">click</span>(Pattern(<img src="1492763524293.png" />).exact().targetOffset(-<span class="dig">395</span>,<span class="dig">170</span>))
+<span class="kw">if</span> exists(<img src="1492764500632.png" />,<span class="dig">20</span>):
+    <span class="skw">click</span>(Pattern(<img src="1492764513498.png" />).exact())
+    <span class="skw">wait</span>(<img src="1492758880659.png" />,<span class="dig">60</span>)
+exists(<img src="1492758842924.png" />)
+<span class="skw">click</span>(<img src="1492758866646.png" />)
+<span class="kw">while</span> <span class="kw">not</span> Region(<span class="dig">59</span>,<span class="dig">14</span>,<span class="dig">1151</span>,<span class="dig">782</span>).exists(Pattern(<img src="1492760677434.png" />).exact()):
+    <span class="cmt">#click(Pattern("1492760648906.png").similar(0.80))</span>
+    <span class="skw">click</span>(Pattern(<img src="1492763198895.png" />).similar(<span class="dig">0.80</span>).targetOffset(<span class="dig">7</span>,<span class="dig">0</span>))
+<span class="kw">if</span> exists(Pattern(<img src="1492762644058.png" />).exact()):
+    <span class="kw">print</span> (<span class="str">'ready to Spin'</span>)
+    hover(<img src="1492765789195.png" />)
+    <span class="cmt">#click("1492762725754.png")</span>
+
+</pre>
+</body>
+</html>
